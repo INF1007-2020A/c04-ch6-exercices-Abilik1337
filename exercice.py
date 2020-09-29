@@ -5,17 +5,24 @@
 def order(values: list = None) -> list:
     if values is None:
         # TODO: demander les valeurs ici
-        pass
+        values = []
+        while len(values) < 10:
+            values.append(input('Entrer une seule valeur \n'))
 
-    return []
+
+    return sorted(values)
 
 
 def anagrams(words: list = None) -> bool:
     if words is None:
         # TODO: demander les mots ici
-        pass
+        words = []
+        while len(words) < 2:
+            values.append(input('Svp, entrez un mot \n'))
+        tri1 = sorted(words[0])
+        tri2 = sorted(words[1])
 
-    return False
+    return tri1 == tri2
 
 
 def contains_doubles(items: list) -> bool:
